@@ -1,0 +1,198 @@
+/* Custom Properties */
+:root {
+  --rainbow-color-0: #ff5b5b;
+  --rainbow-color-1: #ffda5f;
+  --rainbow-color-2: #b8ff52;
+  --rainbow-color-3: #91f7ff;
+  --rainbow-color-4: #f799ff;
+
+  /* Alternate Colors?? */
+  /* --rainbow-color-0a: #ff5a5a;
+  --rainbow-color-1a: #ffc75d;
+  --rainbow-color-2a: #c8ff5a;
+  --rainbow-color-3a: #5af0ff;
+  --rainbow-color-4a: #ff82d4; */
+
+  --rainbow-0-speed: 25s;
+  --rainbow-1-speed: 15s;
+  --rainbow-2-speed: 10s;
+  --rainbow-3-speed: 5s;
+  --rainbow-4-speed: 2.5s;
+  --rainbow-5-speed: .6s;
+}
+
+/* Webkit Animations */
+@keyframes bg-rainbow {
+  0% { background-color: var(--rainbow-color-0); }
+  13% { background-color: var(--rainbow-color-1); }
+  38% { background-color: var(--rainbow-color-2); }
+  61% { background-color: var(--rainbow-color-3); }
+  85% { background-color: var(--rainbow-color-4); }
+  100% { background-color: var(--rainbow-color-0); }
+}
+/* 0, 13, 37, 62, 87, 100 maybe???*/
+/* @keyframes bg-rainbow-a {
+  0% { background-color: var(--rainbow-color-0a); }
+  15% { background-color: var(--rainbow-color-1a); }
+  38% { background-color: var(--rainbow-color-2a); }
+  61% { background-color: var(--rainbow-color-3a); }
+  85% { background-color: var(--rainbow-color-4a); }
+  100% { background-color: var(--rainbow-color-0a); }
+} */
+
+@keyframes text-rainbow {
+  0% { color: var(--rainbow-color-0); }
+  13% { color: var(--rainbow-color-1); }
+  38% { color: var(--rainbow-color-2); }
+  61% { color: var(--rainbow-color-3); }
+  85% { color: var(--rainbow-color-4); }
+  100% { color: var(--rainbow-color-0); }
+}
+
+@keyframes border-rainbow {
+  0% { border-color: var(--rainbow-color-0); }
+  13% { border-color: var(--rainbow-color-1); }
+  38% { border-color: var(--rainbow-color-2); }
+  61% { border-color: var(--rainbow-color-3); }
+  85% { border-color: var(--rainbow-color-4); }
+  100% { border-color: var(--rainbow-color-0); }
+}
+
+@keyframes border-text-rainbow {
+  0% { border-color: var(--rainbow-color-0); color: var(--rainbow-color-0); }
+  13% { border-color: var(--rainbow-color-1); color: var(--rainbow-color-1); }
+  38% { border-color: var(--rainbow-color-2); color: var(--rainbow-color-2); }
+  61% { border-color: var(--rainbow-color-3); color: var(--rainbow-color-3); }
+  85% { border-color: var(--rainbow-color-4); color: var(--rainbow-color-4); }
+  100% { border-color: var(--rainbow-color-0); color: var(--rainbow-color-0); }
+}
+
+/* Background Color Rainbow Gradient Animation */
+.bg-rainbow-0 { /* Extra Slow */
+  -webkit-animation: bg-rainbow var(--rainbow-0-speed) infinite;
+  animation: bg-rainbow var(--rainbow-0-speed) infinite;
+}
+.bg-rainbow-1 { /* Slow */
+  -webkit-animation: bg-rainbow var(--rainbow-1-speed) infinite alternate;
+  animation: bg-rainbow var(--rainbow-1-speed) infinite alternate;
+}
+.bg-rainbow-2 { /* Just Right */
+  -webkit-animation: bg-rainbow var(--rainbow-2-speed) infinite alternate;
+  animation: bg-rainbow var(--rainbow-2-speed) infinite alternate;
+}
+.bg-rainbow-3 { /* Fast */
+  -webkit-animation: bg-rainbow var(--rainbow-3-speed) infinite alternate;
+  animation: bg-rainbow var(--rainbow-3-speed) infinite alternate;
+}
+.bg-rainbow-4 { /* Extra Fast */
+  -webkit-animation: bg-rainbow var(--rainbow-4-speed) infinite alternate;
+  animation: bg-rainbow var(--rainbow-4-speed) infinite alternate;
+}
+.bg-rainbow-5 { /* Crazy fast, maybe don't use this... */
+  -webkit-animation: bg-rainbow var(--rainbow-5-speed) infinite alternate;
+  animation: bg-rainbow var(--rainbow-5-speed) infinite alternate;
+}
+
+/* Background Color Rainbow Gradient on Hover */
+.bg-rainbow-hov-0:hover { /* Extra Slow */
+  -webkit-animation: bg-rainbow var(--rainbow-0-speed) infinite;
+  animation: bg-rainbow var(--rainbow-0-speed) infinite;
+}
+.bg-rainbow-hov-1:hover {
+  -webkit-animation: bg-rainbow var(--rainbow-1-speed) infinite alternate;
+  animation: bg-rainbow var(--rainbow-1-speed) infinite alternate;
+}
+.bg-rainbow-hov-2:hover {
+  -webkit-animation: bg-rainbow var(--rainbow-2-speed) infinite alternate;
+  animation: bg-rainbow var(--rainbow-2-speed) infinite alternate;
+}
+.bg-rainbow-hov-3:hover {
+  -webkit-animation: bg-rainbow var(--rainbow-3-speed) infinite alternate;
+  animation: bg-rainbow var(--rainbow-3-speed) infinite alternate;
+}
+.bg-rainbow-hov-4:hover {
+  -webkit-animation: bg-rainbow var(--rainbow-4-speed) infinite alternate;
+  animation: bg-rainbow var(--rainbow-4-speed) infinite alternate;
+}
+.bg-rainbow-hov-5:hover {
+  -webkit-animation: bg-rainbow var(--rainbow-5-speed) infinite alternate;
+  animation: bg-rainbow var(--rainbow-5-speed) infinite alternate;
+}
+
+/* Text Rainbow */
+.text-rainbow-0 {
+  -webkit-animation: text-rainbow var(--rainbow-0-speed) infinite;
+  animation: text-rainbow var(--rainbow-0-speed) infinite;
+}
+.text-rainbow-1 {
+  -webkit-animation: text-rainbow var(--rainbow-1-speed) infinite alternate;
+  animation: text-rainbow var(--rainbow-1-speed) infinite alternate;
+}
+.text-rainbow-2 {
+  -webkit-animation: text-rainbow var(--rainbow-2-speed) infinite alternate;
+  animation: text-rainbow var(--rainbow-2-speed) infinite alternate;
+}
+.text-rainbow-3 {
+  -webkit-animation: text-rainbow var(--rainbow-3-speed) infinite alternate;
+  animation: text-rainbow var(--rainbow-3-speed) infinite alternate;
+}
+.text-rainbow-4 {
+  -webkit-animation: text-rainbow var(--rainbow-4-speed) infinite alternate;
+  animation: text-rainbow var(--rainbow-4-speed) infinite alternate;
+}
+.text-rainbow-5 {
+  -webkit-animation: text-rainbow var(--rainbow-5-speed) infinite alternate;
+  animation: text-rainbow var(--rainbow-5-speed) infinite alternate;
+}
+
+/* Border Rainbow */
+.border-rainbow-0 {
+  -webkit-animation: border-rainbow var(--rainbow-0-speed) infinite;
+  animation: border-rainbow var(--rainbow-0-speed) infinite;
+}
+.border-rainbow-1 {
+  -webkit-animation: border-rainbow var(--rainbow-1-speed) infinite alternate;
+  animation: border-rainbow var(--rainbow-1-speed) infinite alternate;
+}
+.border-rainbow-2 {
+  -webkit-animation: border-rainbow var(--rainbow-2-speed) infinite alternate;
+  animation: border-rainbow var(--rainbow-2-speed) infinite alternate;
+}
+.border-rainbow-3 {
+  -webkit-animation: border-rainbow var(--rainbow-3-speed) infinite alternate;
+  animation: border-rainbow var(--rainbow-3-speed) infinite alternate;
+}
+.border-rainbow-4 {
+  -webkit-animation: border-rainbow var(--rainbow-4-speed) infinite alternate;
+  animation: border-rainbow var(--rainbow-4-speed) infinite alternate;
+}
+.border-rainbow-5 {
+  -webkit-animation: border-rainbow var(--rainbow-5-speed) infinite alternate;
+  animation: border-rainbow var(--rainbow-5-speed) infinite alternate;
+}
+
+/* Border Rainbow */
+.border-text-rainbow-0 {
+  -webkit-animation: border-text-rainbow var(--rainbow-0-speed) infinite;
+  animation: border-text-rainbow var(--rainbow-0-speed) infinite;
+}
+.border-text-rainbow-1 {
+  -webkit-animation: border-text-rainbow var(--rainbow-1-speed) infinite alternate;
+  animation: border-text-rainbow var(--rainbow-1-speed) infinite alternate;
+}
+.border-text-rainbow-2 {
+  -webkit-animation: border-text-rainbow var(--rainbow-2-speed) infinite alternate;
+  animation: border-text-rainbow var(--rainbow-2-speed) infinite alternate;
+}
+.border-text-rainbow-3 {
+  -webkit-animation: border-text-rainbow var(--rainbow-3-speed) infinite alternate;
+  animation: border-text-rainbow var(--rainbow-3-speed) infinite alternate;
+}
+.border-text-rainbow-4 {
+  -webkit-animation: border-text-rainbow var(--rainbow-4-speed) infinite alternate;
+  animation: border-text-rainbow var(--rainbow-4-speed) infinite alternate;
+}
+.border-text-rainbow-5 {
+  -webkit-animation: border-text-rainbow var(--rainbow-5-speed) infinite alternate;
+  animation: border-text-rainbow var(--rainbow-5-speed) infinite alternate;
+}
