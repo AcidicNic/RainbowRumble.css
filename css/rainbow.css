@@ -18,7 +18,7 @@
   --rainbow-2-speed: 10s;
   --rainbow-3-speed: 5s;
   --rainbow-4-speed: 2.5s;
-  --rainbow-5-speed: .6s;
+  --rainbow-5-speed: 1.2s;
 }
 
 /* Webkit Animations */
@@ -195,4 +195,21 @@
 .border-text-rainbow-5 {
   -webkit-animation: border-text-rainbow var(--rainbow-5-speed) infinite alternate;
   animation: border-text-rainbow var(--rainbow-5-speed) infinite alternate;
+}
+
+/* Transparent */
+.text-trans {
+  color: rgb(0, 0, 0, .65)
+}
+.link-trans, .link-trans:hover {
+  color: rgb(0, 0, 0, .65)
+}
+.text-trans-hov:hover {
+  color: rgb(0, 0, 0, .65)
+}
+.bg-trans {
+  background-color: rgb(0, 0, 0, .65)
+}
+.border-trans {
+  border-color: rgb(0, 0, 0, .65);
 }

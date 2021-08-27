@@ -1,0 +1,25 @@
+.disable-animation, .disable-animation *, .disable-animation:hover, .disable-animation *:hover {
+  -webkit-animation: none !important;
+  animation: none !important;
+}
+.toggle-animation * {
+  background-color: white;
+}
+.footer * {
+  font-weight: bold;
+}
+.no-ul > * {
+  text-decoration: none;
+}
+
+/* AcidicNic's dynamic footer! :) */
+html, body {
+  min-height: 100vh;
+}
+.page-wrapper {
+  min-height: 93vh; /* 100vh - your footer height */
+  display: block;
+}
+.footer {
+  height: 7vh; /* Your height may vary */
+}

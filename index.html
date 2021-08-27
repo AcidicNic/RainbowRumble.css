@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rainbow.css & Rumble.css Demo</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- rainbow.css, rumble.css, utils.css -->
+    <link href="css/rumble.css" rel="stylesheet" type="text/css" />
+    <link href="css/rainbow.css" rel="stylesheet" type="text/css" />
+    <link href="css/misc.css" rel="stylesheet" type="text/css" />
+
+    <!-- Some extra CSS for the demo! -->
+    <link href="demo/demo.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body class="text-center bg-dark text-white">
+    <div class="page-wrapper">
+      <div class="navbar bg-rainbow-0 p-3 user-select-none">
+        <h1 class="text-trans ml-3 mb-0"><i class="fas fa-file-code"></i> Rainbow.css & Rumble.css</h1>
+        <div>
+          <div class="btn border-trans text-trans" id="disable-animations">Disable All</div>
+          <div class="btn border-trans text-trans" id="enable-animations">Enable All</div>
+        </div>
+      </div>
+      <div class="my-4 mx-auto w-75">
+        <div class="mb-4">
+          <h3>Click on a box to toggle it's animations!<span class="text-rainbow-0">*</span></h3>
+          Or use the Disable/Enable All buttons in the navbar.<br>
+          <span class="small"><span class="text-rainbow-0">*</span> The click-to-toggle is only for demonstration purposes, because this demo it would be incredibly annoying without it... You're welcome.</span>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center mb-4">
+          <div class="w-50 toggle-animation">
+            <div class="bg-rainbow-0 h-100 text-trans p-4 rounded user-select-none">
+              .bg-rainbow-0
+            </div>
+          </div>
+          <div class="mx-3"></div>
+          <div class="flex-shrink-0">
+            <script src="https://gist.github.com/AcidicNic/e3363b31cc6a58db3d9c618634a3bbf2.js"></script>
+          </div>
+        </div>
+
+
+        <div class="d-flex align-items-center justify-content-center mb-4">
+          <div class="w-50 rumble-hov-0 toggle-animation">
+            <div class="bg-rainbow-1 py-4 text-trans rounded user-select-none">
+              .bg-rainbow-1<br>.rumble-hov-0
+            </div>
+          </div>
+          <div class="mx-3"></div>
+          <div class="flex-shrink-0">
+            <script src="https://gist.github.com/AcidicNic/d575313297e399c7f311b3f25323b788.js"></script>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center mb-4">
+          <div class="w-50 rumble-hov-1 toggle-animation">
+            <div class="bg-rainbow-2 py-4 text-trans rounded user-select-none">
+              .bg-rainbow-2<br>.rumble-hov-1
+            </div>
+          </div>
+          <div class="mx-3"></div>
+          <div class="flex-shrink-0">
+            <script src="https://gist.github.com/AcidicNic/a8bff8b84b0e91e16893cd4c859e1bc8.js"></script>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center mb-4">
+          <div class="w-50 rumble-hov-2 toggle-animation">
+            <div class="bg-rainbow-3 py-4 text-trans rounded user-select-none">
+              .bg-rainbow-3<br>.rumble-hov-2
+            </div>
+          </div>
+          <div class="mx-3"></div>
+          <div class="flex-shrink-0">
+            <script src="https://gist.github.com/AcidicNic/94f5052085aca45c01879535192509ca.js"></script>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center mb-4">
+          <div class="w-50 rumble-hov-3 toggle-animation">
+            <div class="bg-rainbow-4 py-4 text-trans rounded user-select-none">
+              .bg-rainbow-4<br>.rumble-hov-3
+            </div>
+          </div>
+          <div class="mx-3"></div>
+          <div class="flex-shrink-0">
+            <script src="https://gist.github.com/AcidicNic/d750e2eefb048247b3e421ef2bc4cdb9.js"></script>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center mb-4">
+          <div class="w-50 rumble-0 rumble-hov-4 toggle-animation">
+            <div class="bg-rainbow-0 bg-rainbow-hov-5 py-4 text-trans rounded user-select-none">
+              .rumble-0<br>.bg-rainbow-0<br>.rumble-hov-4<br>.bg-rainbow-5
+            </div>
+          </div>
+          <div class="mx-3"></div>
+          <div class="flex-shrink-0">
+            <script src="https://gist.github.com/AcidicNic/20106c8c7f9d4b01ce0433f6cc8f18cc.js"></script>
+          </div>
+        </div>
+
+        <!-- Transparent -->
+
+        <!-- <div class="my-4 w-75 mx-auto text-dark">
+          <div class="bg-rainbow-hov-5 py-4 rounded user-select-none">
+            .bg-rainbow-hov-5 & .rumble-hov-4
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+    <div class="footer bg-rainbow-0">
+      <div class="d-flex justify-content-center align-items-center user-select-none no-ul h-100">
+        <a href="https://github.com/AcidicNic" target="_blank" class="mx-3 link-trans">
+          <i class="fab fa-github"></i> acidicNic
+        </a>
+        <a href="https://github.com/AcidicNic/rainbow-rumble-css" target="_blank" class="mx-3 link-trans">
+          <i class="fab fa-github"></i> RainbowRumble Repo
+        </a>
+      </div>
+    </div>
+
+    <!-- JS to toggle animations onclick -->
+    <script src="demo/demo.js"></script>
+
+    <!-- FontAwesome for the icons -->
+    <script src="https://kit.fontawesome.com/1e324e14c9.js" crossorigin="anonymous"></script>
+  </body>
+</html>
